@@ -1,32 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-<body>
-    <header>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
 
-    </header>
-    <main>
-        <div><h1>Login - Tienda SAAS</h1></div>
-        <div>
-            <form action="validar.php" method="POST">
-                <label for="">Usuario<br>
-                    <input type="text" name="inp_usuario" placeholder="Ingrese usuario">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Login - Tienda</title>
+  </head>
+  <body>
+  
+
+  <div class="d-lg-flex half">
+    <div class="bg order-1 order-md-2" style="background-image: url('images/bg_1.jpg');"></div>
+    <div class="contents order-2 order-md-1">
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-7">
+            <h3>Login - <strong>Tienda Online</strong></h3>
+            <!-- <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p> -->
+            <form action="validar.php" method="post">
+              <div class="form-group first">
+                <label for="username">Usuario</label>
+                <input type="text" class="form-control" name="inp_usuario" placeholder="Tu correo electrónico" id="username">
+              </div>
+              <div class="form-group last mb-3">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="inp_contrasenia" placeholder="Tu contraseña" id="password">
+              </div>
+              
+              <!-- <div class="d-flex mb-5 align-items-center">
+                <label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
+                  <input type="checkbox" checked="checked"/>
+                  <div class="control__indicator"></div>
                 </label>
-                <br><br>
-                <label for="">Contraseña<br>
-                    <input type="password" name="inp_contrasenia" placeholder="Ingrese contraseña">
-                </label>
-                <br><br>
-                <input type="submit" value="Ingresar">
+                <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
+              </div> -->
+
+              <input type="submit" value="Acceder" class="btn btn-block btn-primary">
+
             </form>
+          </div>
         </div>
-    </main>
-</body>
+      </div>
+    </div>
 
+    
+  </div>
+    
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
